@@ -57,7 +57,6 @@ $( document ).ready(function() {
             },
             error: function(feed) {
                 var html = localStorage.getItem("nieuwsberichten");
-                var html = 'test123';
                 jQuery('#nieuwsberichten').append(html);
             }   
         });
