@@ -87,7 +87,7 @@ div.concert-achtergrondinfo-menu-button {
   border: 1px solid white;
   width: 50%;
   padding: 0.5em;
-  font-family: "LisztFY-Light", sans-serif;
+  font-family: "LisztFY-Light";
   font-size: 1.2em;
 }
 
@@ -104,4 +104,16 @@ div.concert-achtergrondinfo-concert {
   margin-top: 1em;
   display: inline-block;
   font-size: 1.2em;
+}
+
+div.concert-achtergrondinfo-button{
+	background-color: #FDC513;
+	color: black;
+	display: block;
+	padding: 5px;
+  font-family: "LisztFY-Light";
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1em;
+  width: 14em;
 }
