@@ -29,7 +29,7 @@ $( document ).ready(function() {
     
     jQuery(function() {
         jQuery.getFeed({
-            url: 'http://crossorigin.me/http://deharmoniebarneveld.nl/?cat=10&feed=rss2',
+            url: 'http://deharmoniebarneveld.nl/?cat=10&feed=rss2',
             //url: 'http://',
             success: function(feed) {
                 
@@ -57,6 +57,7 @@ $( document ).ready(function() {
             },
             error: function(feed) {
                 var html = localStorage.getItem("nieuwsberichten");
+                var html = 'test123';
                 jQuery('#nieuwsberichten').append(html);
             }   
         });
