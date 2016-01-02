@@ -30,7 +30,6 @@ $( document ).ready(function() {
     jQuery(function() {
         jQuery.getFeed({
             url: 'http://deharmoniebarneveld.nl/?cat=10&feed=rss2',
-            //url: 'http://',
             success: function(feed) {
                 
                 var html = '';

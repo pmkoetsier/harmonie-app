@@ -15,7 +15,8 @@ body {
 	background-repeat: none;
 	background-size: cover;
   background-attachment: fixed;
-	/*color: white;*/
+  /*padding-top: 50px;
+	color: white;*/
 }
 
 div.info-container {
