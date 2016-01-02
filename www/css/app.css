@@ -12,7 +12,7 @@ body {
 	background: black;
 	background-image: url('../img/background.png');
 	background-repeat: none;
-	background-size: cover;
+	background-size: auto;
   background-attachment: fixed;
   background-position: 0 0px;
   /*padding-top: 50px;
