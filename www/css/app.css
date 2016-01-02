@@ -115,6 +115,7 @@ a:hover {
 .nav-tabs > li{
   width: 50%;
   text-align:center;
+  margin: 0px;
 }
 .nav-tabs > li > a{
   border: 1px solid white;    
@@ -124,6 +125,8 @@ a:hover {
   border-radius: 0px;
   background-color: #494949;
   color: white;
+  margin: -1px -1px 0px -1px;
+  
 }
 .nav-tabs > li > a:hover{
     background-color: #303136 !important;
