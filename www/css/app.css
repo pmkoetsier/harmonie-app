@@ -15,8 +15,6 @@ body {
 	background-size: auto;
   background-attachment: fixed;
   background-position: 0 0px;
-  /*padding-top: 50px;
-	color: white;*/
 }
 
 div.info-container {
@@ -67,7 +65,7 @@ div.nieuwsberichten {
 div.nieuwsitem {
   display:block;
   margin: 1em;
-  padding: 0.2em;
+  padding: 0.2em 1em 0em 1em;
   color: white;
   background-color:rgba(0, 0, 0, 0.5);
   border: 1px solid white;
@@ -102,12 +100,8 @@ div.concert-achtergrondinfo-menu-button {
 }
 
 div.concert-achtergrondinfo-concert {
-  position: relative;
-  padding: 3em 0em 1em 1em;
+  padding: 0em 0em 1em 1em;
   margin-top: 1em;
-}
-
-p.LisztFY-bold {
-  font-family: "LisztFY-Black";
-  display: inline;    
+  display: inline-block;
+  font-size: 1.5em;
 }

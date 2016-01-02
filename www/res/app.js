@@ -8,6 +8,7 @@ function stem(kleur) {
 }
 
 $( document ).ready(function() {
+  
 	$("button#back").on("click", function() {
         window.location = 'index.html';
     });
@@ -38,17 +39,19 @@ $( document ).ready(function() {
                 
                     var item = feed.items[i];
                     
-                    html += '<div class="nieuwsitem"><h4>'
+                    html += '<a href="'
+                    + item.link
+                    + '"><div class="nieuwsitem"><h4>'
                     + item.title
                     + '</h4>';
                     
                     html += '<div class="updated">'
-                    + item.updated
+                    + item.updated.substring(0,16)
                     + '</div>';
                     
                     html += '<div>'
                     + item.description.substring(0,24)+"..."
-                    + '</div></div>';
+                    + '</div></div></a>';
                 }
                 
                 localStorage.setItem("nieuwsberichten", html);
