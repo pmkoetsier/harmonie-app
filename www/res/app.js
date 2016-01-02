@@ -29,7 +29,7 @@ $( document ).ready(function() {
     
     jQuery(function() {
         jQuery.getFeed({
-            url: 'http://crossorigin.me/http://deharmoniebarneveld.nl/?cat=10&feed=rss2',
+            url: 'http://deharmoniebarneveld.nl/?cat=10&feed=rss2',
             //url: 'http://',
             success: function(feed) {
                 
