@@ -75,6 +75,7 @@ div.concert-achtergrondinfo {
   border: 1px solid white;
   margin: 1em;
   color: white;
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 div.concert-achtergrondinfo-menu {

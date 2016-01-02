@@ -50,7 +50,7 @@ $( document ).ready(function() {
                     + '</div>';
                     
                     html += '<div>'
-                    + item.description.substring(0,24)+"..."
+                    + item.description.substring(0,50)+"..."
                     + '</div></div></a>';
                 }
                 
