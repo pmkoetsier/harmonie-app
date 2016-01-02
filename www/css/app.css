@@ -72,32 +72,13 @@ div.nieuwsitem {
 }
 
 div.concert-achtergrondinfo {
-  border: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
   margin: 1em;
   color: white;
   background-color:rgba(0, 0, 0, 0.5);
-}
-
-div.concert-achtergrondinfo-menu {
-  color: white;
-  display: block;
-  text-align: center;
-}
-
-div.concert-achtergrondinfo-menu-button {
-  border: 1px solid white;
-  width: 50%;
-  padding: 0.5em;
-  font-family: "LisztFY-Light";
-  font-size: 1.2em;
-}
-
-#concert-achtergrondinfo-menu-concert{
-  float: left;
-}
-
-#concert-achtergrondinfo-menu-programma{
-  float: right;
 }
 
 div.concert-achtergrondinfo-concert {
@@ -121,4 +102,39 @@ div.concert-achtergrondinfo-button {
 
 a:hover {
   text-decoration: none;
+}
+
+.nav-tabs{
+  color: white;
+  display: inline;
+  margin: 0px;
+}
+.tab-content{
+  color: white;
+}
+.nav-tabs > li{
+  width: 50%;
+  text-align:center;
+}
+.nav-tabs > li > a{
+  border: 1px solid white;    
+  padding: 0.5em;
+  font-family: "LisztFY-Light";
+  font-size: 1.2em; 
+  border-radius: 0px;
+  background-color: #494949;
+  color: white;
+}
+.nav-tabs > li > a:hover{
+    background-color: #303136 !important;
+    border: 1px solid none;
+    border-radius: 0;
+    
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    background-color: transparent !important;
+    border: medium none;
+    color: white;
 }
