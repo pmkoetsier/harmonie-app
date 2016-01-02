@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "LisztFY-Light";
+    src: url("./fonts/LisztFY-Light_S.otf") format("opentype");   
+  }
+  
+@font-face {
+    font-family: "LisztFY-Black";
+    src: url("./fonts/LisztFY-Black_S.otf") format("opentype");   
+  }  
+  
+body {
+	background: black;
+	background-image: url('../img/background.png');
+	background-width: 100%;
+	background-repeat: none;
+	background-size: cover;
+  background-attachment: fixed;
+	/*color: white;*/
+}
+
+div.info-container {
+	bottom: 3em;
+	width: 100%;
+	padding: 1em 0em 1em 1em;
+	display: block;
+	position: absolute;
+}
+
+div.concert-datum{
+	background-color: #FDC513;
+	color: black;
+	font-size: 3em;
+	display: inline;
+	padding: 5px;
+	border-bottom: 0px;
+  font-family: "LisztFY-Light";
+}
+
+div.concert-titel {
+	display: block;
+	border-bottom: 1px solid white;
+	border-right: 0px;
+	padding: 8px;
+	margin-top: 1px;
+	font-size: 4em;
+  letter-spacing: 4px;
+	margin-right: 1px;
+	color: white;
+  font-family: "LisztFY-Black";
+}
+
+div.concert-content {
+	margin-top: 100vh;
+	display:block;
+  text-align: center;
+  font-family: "LisztFY-Light";
+  color: #FDC513;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+}
+
+div.nieuwsberichten {
+  display:block;
+}
+
+div.nieuwsitem {
+  display:block;
+  margin: 1em;
+  padding: 0.2em;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+div.concert-achtergrondinfo {
+  border: 1px solid white;
+  margin: 1em;
+  color: white;
+}
+
+div.concert-achtergrondinfo-menu {
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+div.concert-achtergrondinfo-menu-button {
+  border: 1px solid white;
+  width: 50%;
+  padding: 0.5em;
+  font-family: "LisztFY-Light", sans-serif;
+  font-size: 1.2em;
+}
+
+#concert-achtergrondinfo-menu-concert{
+  float: left;
+}
+
+#concert-achtergrondinfo-menu-programma{
+  float: right;
+}
+
+div.concert-achtergrondinfo-concert {
+  position: relative;
+  padding: 3em 0em 1em 1em;
+  margin-top: 1em;
+}
+
+p.LisztFY-bold {
+  font-family: "LisztFY-Black";
+  display: inline;    
+}

@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+		<meta charset="utf-8"> 
+		
+		<script src="res/jquery-2.1.4.min.js"></script>
+		<script src="res/bootstrap/js/bootstrap.min.js"></script>
+		<script src="res/jquery.jfeed.js"></script>
+		<script src="res/app.js"></script>
+		
+		<link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		
+		<title>Meistro 2016</title>
+	</head>
+	<body id="harmonie_body">
+		<nav class="navbar navbar-default" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" style="visibility: hidden;" class="navbar-toggle navbar-left"><span class="glyphicon glyphicon-chevron-left"></span></button>
+              <img src="img/logo.png" />
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Concertagenda</a></li>
+                <li><a href="verenigingsinfo.html">Vereningingsinfo</a></li>
+                <li><a class="stemmen" href="#">Stemmen</a></li>
+                <li><a href="#" data-toggle="modal" data-target=".bs-nieuwsbrief">Nieuwsbrief</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+		
+
+		
+		<div>
+       Samen met anderen met ontzettend veel plezier muziek maken! Dat is één van de belangrijkste aspecten van Muziekgezelschap De Harmonie Barneveld. Samen muziek maken en vooral ook samen gezelligheid creëren. Dit maakt de vereniging uniek en zorgt ervoor dat musiceren meer dan een hobby wordt.
+
+Muziekgezelschap De Harmonie Barneveld is een veelzijdige en actieve vereniging. De vereniging heeft ongeveer 130 leden en biedt ruimte aan verschillende orkesten: het Barnevelds Philharmonisch Orkest, De Jonge Phil, het Leerlingenensemble en boerenkapel De Barre Bloazers.
+
+De verschillende orkesten geven meerdere concerten per jaar, waarbij het publiek altijd kan rekenen op een ontspannen avond uit met goede muziek. Wij heten u dan ook graag welkom bij één van onze uiteenlopende concerten.
+		</div>
+		
+        <!--Stemmen-modal-->
+        <div class="modal bs-example-modal-sm" tabindex="-1" id="stem_modal" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sluiten</span></button>
+                <h4 class="modal-title">Stemmen</h4>
+              </div>
+              <div class="modal-body">
+                <p>U kunt stemmen door een kleur te kiezen, en dan uw scherm in de lucht te houden tijdens de finaleronde!</p>
+                <br />
+                <p><button type="button" class="btn btn-lg btn-danger btn-block" id="button_stem_rood" onclick="stem('#ff0000');">Rood</button></p><!-- #c9302c -->
+                <br />
+                <p><button type="button" class="btn btn-lg btn-primary btn-block" id="button_stem_blauw" onclick="stem('#0000ff');">Blauw</button></p><!-- #3071a9 -->
+                    
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div>
+        </div>
+		
+		<!--Nieuwsbrief-modal-->
+        <div class="modal bs-nieuwsbrief" tabindex="-1" id="nieuwsbrief_modal" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sluiten</span></button>
+                <h4 class="modal-title">Nieuwsbrief</h4>
+              </div>
+              <div class="modal-body">
+                <p>Meld je aan voor onze nieuwsbrief voor nieuws, concerten en acties</p>
+                <br />
+                <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input type="text" class="form-control" placeholder="E-mailadres">
+                </div> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success">Opslaan</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div>
+        </div>
+	</body>
+</html>
