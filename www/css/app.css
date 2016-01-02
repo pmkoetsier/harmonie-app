@@ -107,7 +107,7 @@ div.concert-achtergrondinfo-concert {
   font-size: 1.2em;
 }
 
-div.concert-achtergrondinfo-button{
+div.concert-achtergrondinfo-button {
 	background-color: #FDC513;
 	color: black;
 	display: block;
@@ -117,4 +117,8 @@ div.concert-achtergrondinfo-button{
   margin: auto;
   margin-bottom: 1em;
   width: 14em;
+}
+
+a:hover {
+  text-decoration: none;
 }
