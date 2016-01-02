@@ -18,7 +18,11 @@ $( document ).ready(function() {
     $(".stemmen, .menu_stemmen").on("click", function() {
         $('#stem_modal').modal('show');
     });
-
+    $('#myTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+    
     // Retrieve
     if (localStorage.getItem("nieuwbrief_popup") == "1") {
         //Nieuwsbrief-popup al gehad...
