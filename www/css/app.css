@@ -58,20 +58,26 @@ div.concert-titel {
 	padding: 8px;
 	margin-top: 1px;
 	font-size: 4em;
-  letter-spacing: 4px;
+	letter-spacing: 4px;
 	margin-right: 1px;
 	color: white;
-  font-family: "LisztFY-Black";
+	font-family: "LisztFY-Black";
+    text-transform: uppercase;
 }
 
 div.concert-content {
 	margin-top: 100vh;
 	display:block;
+}
+
+h1 {
   text-align: center;
   font-family: "LisztFY-Light";
   color: #FDC513;
   letter-spacing: 2px;
   font-size: 1.5em;
+  background-color:rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
 }
 
 div.nieuwsberichten {
@@ -109,11 +115,12 @@ div.concert-achtergrondinfo-button {
 	color: black;
 	display: block;
 	padding: 5px;
-  font-family: "LisztFY-Light";
-  text-align: center;
-  margin: auto;
-  margin-bottom: 1em;
-  width: 14em;
+	font-family: "LisztFY-Light";
+	text-align: center;
+	margin: auto;
+	margin-bottom: 1em;
+	width: 14em;
+	text-transform: uppercase;
 }
 
 a:hover {
@@ -142,7 +149,7 @@ a:hover {
   background-color: #494949;
   color: white;
   margin: -1px -1px 0px -1px;
-  
+  text-transform: uppercase;
 }
 .nav-tabs > li > a:hover{
     background-color: #303136 !important;
