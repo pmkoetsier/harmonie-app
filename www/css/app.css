@@ -157,3 +157,12 @@ a:hover {
     border: medium none;
     color: white;
 }
+
+div#stem_scherm a {
+	color: white;
+	text-align: center;
+	display: block;
+	width: 100%;
+	position: fixed;
+	bottom: 10px;
+}
