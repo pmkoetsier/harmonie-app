@@ -71,13 +71,14 @@ div.concert-content {
 }
 
 h1 {
-  text-align: center;
-  font-family: "LisztFY-Light";
-  color: #FDC513;
-  letter-spacing: 2px;
-  font-size: 1.5em;
-  background-color:rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
+	margin-top: 2em;
+	text-align: center;
+	font-family: "LisztFY-Light";
+	color: #FDC513;
+	letter-spacing: 2px;
+	font-size: 1.5em;
+	background-color:rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
 }
 
 div.nieuwsberichten {
