@@ -27,10 +27,10 @@
 body {
 	background: black;
 	background-image: url('../img/background.png');
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-size: auto;
-  background-attachment: fixed;
-  background-position: 0 0px;
+	background-attachment: fixed;
+	background-position: 0 0px;
 }
 
 div.info-container {
