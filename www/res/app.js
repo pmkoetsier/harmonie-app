@@ -31,44 +31,48 @@ $( document ).ready(function() {
         localStorage.setItem("nieuwbrief_popup", "1");
         $('#nieuwsbrief_modal').modal('show');
     }
-    
-    jQuery(function() {
-        jQuery.getFeed({
-            url: 'http://deharmoniebarneveld.nl/?cat=10&feed=rss2',
-            success: function(feed) {
-                
-                var html = '';
-                
-                for(var i = 0; i < feed.items.length && i < 3; i++) {
-                
-                    var item = feed.items[i];
-                    
-                    html += '<a href="'
-                    + item.link
-                    + '"><div class="nieuwsitem"><h4>'
-                    + item.title
-                    + '</h4>';
-                    
-                    html += '<div class="updated">'
-                    + item.updated.substring(0,16)
-                    + '</div>';
-                    
-                    html += '<div>'
-                    + item.description.substring(0,50)+"..."
-                    + '</div></div></a>';
-                }
-                
-                localStorage.setItem("nieuwsberichten", html);
-                jQuery('#nieuwsberichten').append(html);
-            },
-            error: function(feed) {
-                var html = localStorage.getItem("nieuwsberichten");
-                jQuery('#nieuwsberichten').append(html);
-            }   
-        });
 
-    });
+	//Nieuwsberichten inladen
+	$.getFeed({
+		url: 'http://deharmoniebarneveld.nl/?cat=10&feed=rss2',
+		success: function(feed) {
+			
+			var html = '';
+			
+			for(var i = 0; i < feed.items.length && i < 3; i++) {
+			
+				var item = feed.items[i];
+				
+				html += '<a href="'
+				+ item.link
+				+ '"><div class="nieuwsitem"><h4>'
+				+ item.title
+				+ '</h4>';
+				
+				html += '<div class="updated">'
+				+ item.updated.substring(0,16)
+				+ '</div>';
+				
+				html += '<div>'
+				+ item.description.substring(0,50)+"..."
+				+ '</div></div></a>';
+			}
+			
+			localStorage.setItem("nieuwsberichten", html);
+			$('#nieuwsberichten').html(html);
+		},
+		error: function(feed) {
+			var html = localStorage.getItem("nieuwsberichten");
+			if (html == null) {
+				html = '<div class="nieuwsitem">'
+				+ "Geen internetverbinding beschikbaar. Probeer het later nog eens."
+				+ '</div>';
+			}
+			$('#nieuwsberichten').html(html);
+		}   
+	});
     
+	//Handling van nieuwsbrief modal
     $('#nieuwsbrief_modal .btn-success').click(function() {
     	setTimeout(function(){ 
     		$('#nieuwsbrief_modal .input-group:first').after('<span class="text-danger" id="nieuwsbrief_msg">De server laat op zich wachten. Probeer het later nog eens!</div>');
