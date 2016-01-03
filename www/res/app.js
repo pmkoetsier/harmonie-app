@@ -42,7 +42,8 @@ $( document ).ready(function() {
 			for(var i = 0; i < feed.items.length && i < 3; i++) {
 			
 				var item = feed.items[i];
-				
+				var updated = new Date(item.updated);
+
 				html += '<a href="'
 				+ item.link
 				+ '"><div class="nieuwsitem"><h4>'
@@ -50,7 +51,7 @@ $( document ).ready(function() {
 				+ '</h4>';
 				
 				html += '<div class="updated">'
-				+ item.updated.substring(0,16)
+				+ updated.getDate() + "-" + (updated.getMonth() + 1) + "-" + updated.getFullYear()
 				+ '</div>';
 				
 				html += '<div>'
