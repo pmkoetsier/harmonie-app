@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'LisztFY-Black';
-    src: url('lisztfy-black_s-webfont.eot');
-    src: url('lisztfy-black_s-webfont.eot?#iefix') format('embedded-opentype'),
-         url('lisztfy-black_s-webfont.woff2') format('woff2'),
-         url('lisztfy-black_s-webfont.woff') format('woff'),
-         url('lisztfy-black_s-webfont.ttf') format('truetype'),
-         url('lisztfy-black_s-webfont.svg#liszt_fyblack') format('svg');
+    src: url('./fonts/lisztfy-black_s-webfont.eot');
+    src: url('./fonts/lisztfy-black_s-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/lisztfy-black_s-webfont.woff2') format('woff2'),
+         url('./fonts/lisztfy-black_s-webfont.woff') format('woff'),
+         url('./fonts/lisztfy-black_s-webfont.ttf') format('truetype'),
+         url('./fonts/lisztfy-black_s-webfont.svg#liszt_fyblack') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -13,12 +13,12 @@
 
 @font-face {
     font-family: 'LisztFY-Light';
-    src: url('lisztfy-light_s-webfont.eot');
-    src: url('lisztfy-light_s-webfont.eot?#iefix') format('embedded-opentype'),
-         url('lisztfy-light_s-webfont.woff2') format('woff2'),
-         url('lisztfy-light_s-webfont.woff') format('woff'),
-         url('lisztfy-light_s-webfont.ttf') format('truetype'),
-         url('lisztfy-light_s-webfont.svg#liszt_fylight') format('svg');
+    src: url('./fonts/lisztfy-light_s-webfont.eot');
+    src: url('./fonts/lisztfy-light_s-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/lisztfy-light_s-webfont.woff2') format('woff2'),
+         url('./fonts/lisztfy-light_s-webfont.woff') format('woff'),
+         url('./fonts/lisztfy-light_s-webfont.ttf') format('truetype'),
+         url('./fonts/lisztfy-light_s-webfont.svg#liszt_fylight') format('svg');
     font-weight: normal;
     font-style: normal;
 
