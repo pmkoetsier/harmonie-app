@@ -63,6 +63,7 @@ div.concert-titel {
 	color: white;
 	font-family: "LisztFY-Black";
     text-transform: uppercase;
+        background-color: rgba(0,0,0,0,5);
 }
 
 div.concert-content {
