@@ -46,9 +46,9 @@ $( document ).ready(function() {
 
 				html += '<a href="'
 				+ item.link
-				+ '"><div class="nieuwsitem"><h4>'
+				+ '"><div class="nieuwsitem"><h2>'
 				+ item.title
-				+ '</h4>';
+				+ '</h2>';
 				
 				html += '<div class="updated">'
 				+ updated.getDate() + "-" + (updated.getMonth() + 1) + "-" + updated.getFullYear()
@@ -106,3 +106,39 @@ $( window ).resize(function() {
   var stemheight = $('div.menu>img.menu_stemmen').height();
   $('body').css('height', (height*2+100+stemheight));
 });
+
+var getAgenda = function() {
+	$.getFeed({
+		url: 'http://deharmoniebarneveld.nl/?eme_rss=main&scope=future&order=ASC&category=&author=&contact_person=&limit=5&location_id=&title=',
+		success: function(feed) {
+			
+			var html = '';
+			
+			for(var i = 0; i < feed.items.length && i < 3; i++) {
+				var item = feed.items[i];
+
+				html += '<a href="'
+				+ item.link
+				+ '"><div class="nieuwsitem"><h2>'
+				+ item.title
+				+ '</h2>';
+				
+				html += '<div>'
+				+ item.description
+				+ '</div></div></a>';
+			}
+			
+			localStorage.setItem("agenda", html);
+			$('#agenda').html(html);
+		},
+		error: function(feed) {
+			var html = localStorage.getItem("agenda");
+			if (html == null) {
+				html = '<div class="nieuwsitem">'
+				+ "Geen internetverbinding beschikbaar. Probeer het later nog eens."
+				+ '</div>';
+			}
+			$('#agenda').html(html);
+		}   
+	});
+}
