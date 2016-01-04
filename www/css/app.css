@@ -48,7 +48,8 @@ div.concert-datum{
 	display: inline;
 	padding: 5px;
 	border-bottom: 0px;
-  font-family: "LisztFY-Light";
+        font-family: "LisztFY-Light";
+        margin-left: 20px;
 }
 
 div.concert-titel {
@@ -58,10 +59,10 @@ div.concert-titel {
 	padding: 8px;
 	font-size: 4em;
 	letter-spacing: 4px;
-	margin-right: 1px;
+	margin-left: 20px;
 	color: white;
 	font-family: "LisztFY-Black";
-    text-transform: uppercase;
+        text-transform: uppercase;
         background-color: rgba(0,0,0,0.5);
 }
 
