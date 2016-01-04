@@ -81,11 +81,24 @@ h1 {
 	text-transform: uppercase;
 }
 
+h2 {
+	font-family: "LisztFY-Light";
+	color: #FDC513;
+	letter-spacing: 2px;
+	font-size: 1.2em;
+	background-color:rgba(0, 0, 0, 0.5);
+	font-variant: small-caps;
+}
+
+div.nieuwsitem > h2, div.text-content > h2 {
+	background: none;
+}
+
 div.nieuwsberichten {
   display:block;
 }
 
-div.nieuwsitem {
+div.nieuwsitem, div.text-content {
   display:block;
   margin: 1em;
   padding: 0.2em 1em 0em 1em;
