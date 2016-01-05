@@ -155,6 +155,8 @@ a:hover {
 }
 .tab-content{
   color: white;
+}
+.tab-content > p {
   font-size: 1.4em;
 }
 .nav-tabs > li{
