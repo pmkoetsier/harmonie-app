@@ -129,6 +129,7 @@ div.concert-programma-concert {
   padding: 0em 0em 1em 1em;
   margin-top: 1em;
   display: inline-block;
+  font-size: 1.4em;
 }
 
 div.concert-achtergrondinfo-button {
@@ -155,9 +156,6 @@ a:hover {
 }
 .tab-content{
   color: white;
-}
-.tab-content > p {
-  font-size: 1.4em;
 }
 .nav-tabs > li{
   width: 50%;
