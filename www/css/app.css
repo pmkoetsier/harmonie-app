@@ -33,6 +33,11 @@ body {
 	background-position: 0 0px;
 }
 
+img#logo {
+	padding: 10px 0px 0px 10px;
+	height: 40px;
+}
+
 div.info-container {
 	bottom: 3em;
 	width: 100%;
