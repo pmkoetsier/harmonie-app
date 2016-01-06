@@ -102,7 +102,8 @@ JFeedItem.prototype = {
     link: '',
     description: '',
     updated: '',
-    id: ''
+    id: '',
+	content: ''
 };
 
 function JAtom(xml) {
@@ -167,12 +168,13 @@ JRss.prototype  = {
         jQuery('item', xml).each( function() {
         
             var item = new JFeedItem();
-            
+
             item.title = jQuery(this).find('title').eq(0).text();
             item.link = jQuery(this).find('link').eq(0).text();
             item.description = jQuery(this).find('description').eq(0).text();
             item.updated = jQuery(this).find('pubDate').eq(0).text();
             item.id = jQuery(this).find('guid').eq(0).text();
+            item.content = jQuery(this).find('encoded').eq(0).text();
             
             feed.items.push(item);
         });

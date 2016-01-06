@@ -42,6 +42,7 @@ $( document ).ready(function() {
 			for(var i = 0; i < feed.items.length && i < 3; i++) {
 			
 				var item = feed.items[i];
+
 				var updated = new Date(item.updated);
 
 				html += '<a href="'
@@ -67,7 +68,7 @@ $( document ).ready(function() {
 				+ '		<h4 class="modal-title" id="myModalLabel">' + item.title + '</h4>'
 				+ '	  </div>'
 				+ '	  <div class="modal-body">'
-				+ item.description
+				+ item.content
 				+ '	  </div>'
 				+ '	</div>'
 				+ '</div>'
