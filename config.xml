@@ -64,9 +64,18 @@
 	<gap:splash src="www/res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
 	<gap:splash src="www/res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
 	<gap:splash src="www/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
+	
 	<plugin name="cordova-plugin-whitelist" />	
 	<allow-navigation href="*" />
 	<allow-intent href="http://*/*" />
 	<allow-intent href="https://*/*" />
 	<access origin="*" />
+	
+	<preference name="Fullscreen" value="true" />
+	<gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true"> 
+		<true/> 
+	</gap:config-file>
+	<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+		<false/>
+	</gap:config-file>
 </widget>
