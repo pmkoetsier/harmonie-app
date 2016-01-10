@@ -121,7 +121,7 @@ div.nieuwsitem, div.text-content {
   color: white;
   background-color:rgba(0, 0, 0, 0.5);
   border: 1px solid white;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 div.concert-achtergrondinfo {
@@ -138,14 +138,14 @@ div.concert-achtergrondinfo-concert {
   padding: 0em 0em 1em 1em;
   margin-top: 1em;
   display: inline-block;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 div.concert-programma-concert {
   padding: 0em 0em 1em 1em;
   margin-top: 1em;
   display: inline-block;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 div.concert-achtergrondinfo-button {
