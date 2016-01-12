@@ -90,8 +90,8 @@ h1 {
 h2 {
 	font-family: "LisztFY-Black";
 	color: #FDC513;
-	letter-spacing: 2px;
-	font-size: 1.4em;
+	letter-spacing: 1px;
+	font-size: 1.2em;
 	background-color:rgba(0, 0, 0, 0.5);
 	font-variant: small-caps;
 }
