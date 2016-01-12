@@ -22,15 +22,6 @@ $( document ).ready(function() {
         e.preventDefault()
         $(this).tab('show')
     })
-    
-    // Retrieve
-    if (localStorage.getItem("nieuwbrief_popup") == "1") {
-        //Nieuwsbrief-popup al gehad...
-    } else {
-        //Nieuwsbrief-popup nog niet gehad!
-        localStorage.setItem("nieuwbrief_popup", "1");
-        $('#nieuwsbrief_modal').modal('show');
-    }
 
 	//Nieuwsberichten inladen
 	$.getFeed({
@@ -115,6 +106,15 @@ $( document ).ready(function() {
     		}
     	});
     });
+    
+    // Retrieve
+    if (localStorage.getItem("nieuwbrief_popup") == "1") {
+        //Nieuwsbrief-popup al gehad...
+    } else {
+        //Nieuwsbrief-popup nog niet gehad!
+        localStorage.setItem("nieuwbrief_popup", "1");
+        //$('#nieuwsbrief_modal').modal('show');
+    }
 });
 
 $( window ).resize(function() {
@@ -135,7 +135,7 @@ var getAgenda = function() {
 
 				html += '<a href="'
 				+ item.link
-				+ '"><div class="nieuwsitem"><h2>'
+				+ '" target="_blank"><div class="nieuwsitem"><h2>'
 				+ item.title
 				+ '</h2>';
 				
