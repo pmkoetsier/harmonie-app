@@ -133,15 +133,18 @@ var getAgenda = function() {
 			for(var i = 0; i < feed.items.length && i < 3; i++) {
 				var item = feed.items[i];
 
-				html += '<a href="'
-				+ item.link
-				+ '" target="_blank"><div class="nieuwsitem"><h2>'
+				html += ''
+				//+ '<a href="'
+				//+ item.link
+				//+ '" target="_blank">'
+				+ '<div class="nieuwsitem"><h2>'
 				+ item.title
-				+ '</h2>';
+				+ '</h2>'
 				
 				html += '<div>'
 				+ item.description
-				+ '</div></div></a>';
+				+ '</div></div>'
+				//+ '</a>'
 			}
 			
 			localStorage.setItem("agenda", html);
