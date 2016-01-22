@@ -70,7 +70,7 @@ $( document ).ready(function() {
 			$('#nieuwsberichten').html(html);
 			
 			$('.modal-body img').attr("height", "").attr("width", "");
-			$( "p[style='text-align: center;']").attr("style", "");
+			$( "p[style='text-align: center;'], h2[style='text-align: center;']").attr("style", "");
 		},
 		error: function(feed) {
 			var html = localStorage.getItem("nieuwsberichten");
