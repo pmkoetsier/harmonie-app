@@ -96,7 +96,7 @@ h2 {
 	font-variant: small-caps;
 }
 
-div.nieuwsitem > h2, div.text-content > h2 {
+div.nieuwsitem > h2, div.modal-body h2 {
 	background: none;
 }
 
@@ -210,4 +210,9 @@ div#stem_scherm a {
 	width: 100%;
 	position: fixed;
 	bottom: 10px;
+}
+
+.modal-body img {
+	display:block !important;
+	max-width: 100% !important;
 }

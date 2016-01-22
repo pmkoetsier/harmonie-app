@@ -68,6 +68,9 @@ $( document ).ready(function() {
 			
 			localStorage.setItem("nieuwsberichten", html);
 			$('#nieuwsberichten').html(html);
+			
+			$('.modal-body img').attr("height", "").attr("width", "");
+			$( "p[style='text-align: center;']").attr("style", "");
 		},
 		error: function(feed) {
 			var html = localStorage.getItem("nieuwsberichten");
