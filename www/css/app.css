@@ -94,6 +94,7 @@ h2 {
 	font-size: 1.2em;
 	background-color:rgba(0, 0, 0, 0.5);
 	font-variant: small-caps;
+	margin-top: 10px;
 }
 
 div.nieuwsitem > h2, div.modal-body h2 {
